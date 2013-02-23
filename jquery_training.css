@@ -6,6 +6,11 @@ html, body {
   height:100%;
 }
 
+.container {
+  width:800px;
+  margin:0 auto;
+}
+
 div#header {
   background-color:#000;
   height:60px;
@@ -24,36 +29,19 @@ ul.header-menu > li {
   border-right:solid 1px #eee;
   text-align:center;
 }
-ul.header-menu > li:first-of-type {
-  border-left:solid 1px #eee;
-  margin-left:50px;
+ul.header-menu > li a {
+  display:block;
+  width:200px;
+  color:#fff;
+  text-decoration:none;
+}
+ul.header-menu > li a:hover {
+  background-color:#fff;
+  color:#666;
 }
 
 div#content {
-}
-
-div#left-content {
-  width:200px;
-  height:500px;
-  background-color:#000;
-  border-radius:6px;
-  margin:10px;
-  float:left;
-}
-
-div#main-content {
-  padding-left:220px;
-  height:510px;
-}
-div#main-content > .inner {
   background-color:#eee;
-  width:100%;
-  height:100%;
-}
-div#main-content > .inner .square {
-  border:solid 1px #888;
-  width:150px;
-  height:150px;
-  float:left;
-  margin:5px;
+  height:450px;
+  padding-top:50px;
 }
