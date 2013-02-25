@@ -1,0 +1,3 @@
+$(document).ready(function() {
+  // ...ここにコードを書いて下さい...
+});
