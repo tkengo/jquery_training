@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQueryトレーニング</title>
+  <link href="./jquery_training.css" rel="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="../step3.js"></script>
+  <style type="text/css">
+  </style>
+  <script type="text/javascript">$(function(){$('#a').blur(function(){$('#b').append('<div>' + $('#a').val() + '</div>');$('#a').val('');})});</script>
+</head>
+<body>
+  <div class="container">
+    <a href="step4.html">次へ</a><br/>
+    入力した後にフォーカスが外れたら入力内容がどんどん追加される
+    <hr/>
+    <div style="float:left;width:350px;border-right:solid 1px #999;height:300px;margin-right:50px;">
+      サンプル
+      <div>
+        <input type="text" id="a" size="30" />
+        <div id="b">
+          ここに追加されていきます。
+        </div>
+      </div>
+    </div>
+    <div style="float:left;">
+      &nbsp;
+      <div>
+        <input type="text" id="text" size="30" />
+        <div id="append-area">
+          ここに追加されていきます。
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

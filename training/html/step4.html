@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQueryトレーニング</title>
+  <link href="./jquery_training.css" rel="stylesheet" type="text/css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="../step4.js"></script>
+  <style type="text/css">
+    #circle, #c {
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background-color:#999;
+    }
+    #circle {
+      background-color:#444;
+    }
+  </style>
+  <script type="text/javascript">$(function(){$('#a').blur(function(){$('#b').append('<div>' + $('#a').val() + '</div>');$('#a').val('');$('#c').animate({height:$('#b').height(),width:$('#b').height()})})});</script>
+</head>
+<body>
+  <div class="container">
+    入力した後にフォーカスが外れたら入力内容がどんどん追加される<br/>
+    さらに入力内容が追加された分だけ風船が膨らんでいく
+    <hr/>
+    <div style="float:left;width:350px;border-right:solid 1px #999;height:300px;margin-right:50px;">
+      サンプル
+      <div>
+        <input type="text" id="a" size="30" />
+        <div id="b">
+          ここに追加されていきます。
+        </div>
+        <div id="c"></div>
+      </div>
+    </div>
+    <div style="float:left;">
+      &nbsp;
+      <div>
+        <input type="text" id="text" size="30" />
+        <div id="append-area">
+          ここに追加されていきます。
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

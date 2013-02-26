@@ -7,7 +7,7 @@
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="../step1.js"></script>
   <style type="text/css">
-    #navi {
+    #navi, #a {
       width:200px;
       background-color:#000;
       color:#fff;
@@ -16,7 +16,7 @@
       text-align:center;
       cursor:pointer;
     }
-    #navi:hover {
+    #navi:hover, #a:hover {
       background-color:#66b;
       color:#000;
     }
@@ -33,19 +33,38 @@
       line-height:40px;
     }
   </style>
+  <script type="text/javascript">$(function(){$('#a').mouseover(function(){$('#b').fadeIn();}).mouseout(function(){$('#b').fadeOut();})});</script>
 </head>
 <body>
   <div class="container">
-    <a href="step2.html">次へ</a>
-    <div id="navi">
-      メニュー
+    <a href="step2.html">次へ</a><br/>
+    メニューにマウスオーバーしたらサブメニューを表示する<br/>
+    メニューからマウスアウトしたらサブメニューを非表示にする<br/>
+    <hr/>
+    <div style="float:left;width:270px;border-right:solid 1px #999;height:300px;margin-right:50px;">
+      サンプル
+      <div id="a">
+        メニュー
+      </div>
+      <ul id="b">
+        <li>サブメニュー1</li>
+        <li>サブメニュー2</li>
+        <li>サブメニュー3</li>
+        <li>サブメニュー4</li>
+      </ul>
     </div>
-    <ul id="submenu">
-      <li>サブメニュー1</li>
-      <li>サブメニュー2</li>
-      <li>サブメニュー3</li>
-      <li>サブメニュー4</li>
-    </ul>
+    <div style="float:left;">
+      &nbsp;
+      <div id="navi">
+        メニュー
+      </div>
+      <ul id="submenu">
+        <li>サブメニュー1</li>
+        <li>サブメニュー2</li>
+        <li>サブメニュー3</li>
+        <li>サブメニュー4</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
